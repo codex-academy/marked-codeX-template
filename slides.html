@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>class: center, middle, reverse</title>
+		<style>
+			/* Basic theme for remark slides */
+
+* {
+    .box-sizing(border-box);
+}
+*:before,
+*:after {
+    .box-sizing(border-box);
+}
+
+html {
+    font-size: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #555555;
+    background-color: #FFFFFF;
+}
+
+a {
+    color: #8bc53f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover, a:focus {
+    color: #8bc53f;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 3px solid #8bc53f;
+    outline-offset: 0;
+    background-color: #8bc53f;
+    color: #FFF;
+    text-decoration: none;
+}
+
+ol {
+    padding: 0 0 0 1.5em;
+    margin: 1em 0;
+}
+
+ul {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+li:before {
+    content: "\25cf";
+    color: #8bc53f;
+    padding-right: 6px;
+}
+
+img {
+    vertical-align: middle;
+    max-height: 600px;
+    margin: 0 auto 1em;
+    display: block;
+}
+
+hr {
+    height: 0;
+    margin: 1em 0;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 1em 0 0.5em;
+}
+
+b,
+strong {
+    font-weight: 500;
+}
+
+blockquote {
+    border-left: 5px solid #cccccc;
+    padding-left: 1em;
+    margin: 1em -1em;
+    font-style: italic;
+    color: #999999;
+}
+
+.remark-slide-number {
+    display: none;
+}
+
+.remark-slide {
+    display: table;
+}
+
+.remark-slide-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 4em;
+    font-size: 24px;
+    border-bottom: 20px solid #8bc53f;
+}
+
+.remark-slide-content:after {
+    content: "";
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    height: 40px;
+    width: 120px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('http://www.projectcodex.co/images/codeX-logo-alt.svg');
+}
+
+.remark-slide-content h1 {
+    font-size: 56px;
+    color: #8bc53f;
+}
+
+.remark-slide-content h2 {
+    font-size: 48px;
+    color: #8bc53f;
+}
+
+.remark-slide-content h3 {
+    font-size: 40px;
+    color: #8bc53f;
+}
+
+.remark-slide-content h4 {
+    font-size: 36px;
+    color: #8bc53f;
+}
+
+.remark-slide-content h5 {
+    font-size: 30px;
+    color: #8bc53f;
+}
+
+.remark-slide-content h6 {
+    font-size: 24px;
+    color: #8bc53f;
+}
+
+.remark-slide-content > :first-child {
+    margin-top: 0;
+}
+
+.remark-slide-content > :last-child {
+    margin-bottom: 0;
+}
+
+.remark-code-line {
+    white-space: normal;
+    background-color: #000;
+    border: 1px solid #000;
+    color: #fff;
+    padding: 0 1em;
+}
+
+		</style>
+	</head>
+	<body>
+		<textarea id="source">
+layout: true
+class: center, middle, reverse
+---
+# Algorithms
+
+---
+# Intro
+
+Most useful thing learned in last sprint
+---
+layout: false
+class: none
+
+# Overview:
+
+- Thinking vs coding
+- What is an algorithm?
+- Pseudo code
+- Visualising algorithms
+- Flow charts
+
+---
+
+# Who trumps who?
+
+- `a. Thinking > Coding`
+- `b. Thinking < Coding`
+- `c. Thinking === Coding`
+
+---
+layout: true
+class: center, middle, reverse
+---
+## What is coding?
+write on a sticky
+---
+
+## What is an algorithm?
+---
+
+## What is an algorithm?
+`A step by step description of how to solve a given problem.`
+
+---
+
+## What is an algorithm?
+
+`It's the steps needed to solve a problem,
+not how to solve the problem using Javascript (or any other programming language)!.` - Onwaba
+
+---
+## Taxi Kata
+what was the algorithm?
+---
+
+## Taxi Kata
+write the algorithm in words
+---
+class: center, middle
+
+## Taxi Kata
+pseudo code!  
+what should be done in words...
+
+---
+
+## Taxi Kata
+Draw the algorithm using: **blocks & arrows**
+---
+
+## Is there a better way?
+to draw algorithms
+
+---
+
+layout: false
+class: none
+
+# Flow chart elements:
+
+- Start/End
+- Input/Output
+- Processing
+- Decisions
+- Connectors
+
+---
+class: center, middle, reverse
+
+## Flow chart
+ ![Start](https://wcs.smartdraw.com/flowchart/img/basic-symbols.jpg?bn=1510011141)
+
+> source: `https://www.smartdraw.com/flowchart/flowchart-symbols.htm`
+
+---
+layout: false
+class: none
+
+## Flow chart for Taxi Kata - Take 1
+
+* Start
+* Initialise the counter
+* Check which arrow was key pressed on keyboard
+* If the right arrow key was pressed increment the counter
+* If the left arrow key was pressed decrement the counter
+* Calculate the Taxi Class name from the counter
+* Assign the className to the taxi
+
+---
+layout: false
+class: none
+
+## Flow chart for Taxi Kata - Take 2
+
+* Start
+* Initialise the counter
+* Check which arrow was key pressed on keyboard
+    * If the traffic light is green
+        * If the right arrow key was pressed increment the counter
+        * If the left arrow key was pressed decrement the counter
+        * Calculate the Taxi Class name from the counter
+        * Assign the className to the taxi
+---
+layout: true
+class: center, middle, reverse
+---
+
+## Flow chart for Taxi Kata - Take 3
+
+It was a mess...
+
+---
+
+# Why was it a mess?
+
+---
+
+# Why was it a mess?
+
+I realised it was...
+---
+
+# Why was it a mess?
+
+I realised it was...
+I even understood why!
+
+---
+
+# What is the focus?
+
+---
+# What is the focus?
+
+What should be done (not how to do it yet!)
+
+---
+## What is an algorithm?
+
+`It's the steps needed to solve a problem,
+not how to solve the problem using Javascript (or any other programming language)!.` - Onwaba
+
+`Mapping your journey to the answer` - anonymous ;-)
+
+---
+# Now...
+---
+
+# Draw a flow chart to
+
+`Help Nelisa calculate total sales per product`
+---
+
+# Draw a flow chart to
+
+`Help Nelisa calculate her most popular product`
+---
+
+# Draw a flow chart for
+`Playing with matches`
+
+---
+
+# What was useful?
+
+`where can you apply it?`
+
+		</textarea>
+		<script src="http://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
+		<script>
+			var slideshow = remark.create();
+		</script>
+		<script></script>
+	</body>
+</html>
